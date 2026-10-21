@@ -41,7 +41,6 @@ jobs:
 
       - name: Build Debug APK
         env:
-          ANDROID_HOME: ${{ env.ANDROID_SDK_ROOT }}
           GRADLE_USER_HOME: ${{ github.workspace }}/.gradle
         run: gradle assembleDebug --debug --stacktrace
 

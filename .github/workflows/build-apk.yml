@@ -26,15 +26,18 @@ jobs:
           yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
           $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
-      - name: Make gradlew executable and fix line endings
+      - name: Install Gradle 8.2
         run: |
-          chmod +x gradlew
-          sed -i 's/\r$//' gradlew
+          wget https://services.gradle.org/distributions/gradle-8.2-bin.zip -O /tmp/gradle.zip
+          unzip -q /tmp/gradle.zip -d /opt
+          echo "GRADLE_HOME=/opt/gradle-8.2" >> $GITHUB_ENV
+          echo "/opt/gradle-8.2/bin" >> $GITHUB_PATH
 
       - name: Build Debug APK
         env:
           ANDROID_HOME: ${{ env.ANDROID_SDK_ROOT }}
-        run: bash gradlew assembleDebug
+          GRADLE_USER_HOME: ${{ github.workspace }}/.gradle
+        run: gradle assembleDebug
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4

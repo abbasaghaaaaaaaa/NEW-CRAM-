@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="@string/import_export_title"
+        android:titleTextColor="@color/color_on_primary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="واردات"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/color_text_primary"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btn_import_csv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/import_csv"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btn_import_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/import_text"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.FlashcardApp.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/paste_text"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_paste_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="6"
+                    android:maxLines="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.FlashcardApp.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/separator"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="|" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_do_import_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="وارد کردن متن pasted"
+                android:layout_marginBottom="24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_divider"
+                android:layout_marginVertical="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="صادرات"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/color_text_primary"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btn_export_csv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/export_csv"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btn_export_json"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/export_json"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btn_merge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/merge_decks"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

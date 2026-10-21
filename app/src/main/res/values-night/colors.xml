@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme -->
+    <color name="color_primary">#5C6BC0</color>
+    <color name="color_primary_dark">#303F9F</color>
+    <color name="color_accent">#FF80AB</color>
+    <color name="color_background">#121212</color>
+    <color name="color_surface">#1E1E1E</color>
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_on_background">#E0E0E0</color>
+    <color name="color_on_surface">#E0E0E0</color>
+    <color name="color_card_bg">#2A2A2A</color>
+    <color name="color_text_primary">#E0E0E0</color>
+    <color name="color_text_secondary">#A0A0A0</color>
+    <color name="color_divider">#333333</color>
+    <color name="color_box1">#1E3A5F</color>
+    <color name="color_box2">#1E3A5F</color>
+    <color name="color_box3">#4A4A1E</color>
+    <color name="color_box4">#5F3A1E</color>
+    <color name="color_box5">#1E4A3A</color>
+    <color name="color_correct">#69BB65</color>
+    <color name="color_wrong">#EF5350</color>
+    <color name="color_hint_bg">#3E2E1E</color>
+    <color name="color_flip_shadow">#444444</color>
+</resources>

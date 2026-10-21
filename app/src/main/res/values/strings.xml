@@ -1,1 +1,150 @@
-    <string name="rtl_description">راست به چپ با پشتیبانی کامل فارسی</string></resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- App -->
+    <string name="app_name">فلاškارت</string>
+    <string name="app_name_short">فلاškارت</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_decks">مجموعه‌ها</string>
+    <string name="nav_study">آموزش</string>
+    <string name="nav_stats">آمار</string>
+
+    <!-- Decks screen -->
+    <string name="decks_title">مجموعه‌های فلش‌کارت</string>
+    <string name="add_deck">افزودن مجموعه</string>
+    <string name="deck_name_hint">نام مجموعه</string>
+    <string name="deck_color">رنگ مجموعه</string>
+    <string name="create_deck">ساخت مجموعه</string>
+    <string name="edit_deck">ویرایش مجموعه</string>
+    <string name="delete_deck">حذف مجموعه</string>
+    <string name="confirm_delete_deck">آیا مطمئن هستید که می‌خواهید این مجموعه را حذف کنید؟ تمام کارت‌های آن نیز به‌طور دائمی حذف می‌شوند.</string>
+    <string name="decks_empty">هنوز مجموعه‌ای ندارید. یک مجموعه جدید بسازید تا شروع کنید.</string>
+    <string name="deck_cards_count">%d کارت</string>
+    <string name="deck_mastered">%d/%d осво شده</string>
+
+    <!-- Cards screen -->
+    <string name="cards_title">کارت‌ها</string>
+    <string name="add_card">افزودن کارت</string>
+    <string name="card_front">عنوان (مقدمه)</string>
+    <string name="card_back">تعریف (پایان)</string>
+    <string name="card_hint">نکته یا راهنمای اضافی (اختیاری)</string>
+    <string name="save_card">ذخیره کارت</string>
+    <string name="update_card">بروزرسانی کارت</string>
+    <string name="delete_card">حذف کارت</string>
+    <string name="edit_card">ویرایش کارت</string>
+    <string name="confirm_delete_card">آیا مطمئن هستید که می‌خواهید این کارت را حذف کنید؟</string>
+    <string name="search_cards">جستجو در کارت‌ها…</string>
+    <string name="search_decks">جستجو در مجموعه‌ها…</string>
+    <string name="no_cards">هیچ کارت در این مجموعه نیست.</string>
+    <string name="starred_only">فقط کارت‌های ستاره‌دار</string>
+    <string name="star">ستاره</string>
+    <string name="unstar">حذف ستاره</string>
+
+    <!-- Card editor -->
+    <string name="card_editor_title_new">کارت جدید</string>
+    <string name="card_editor_title_edit">ویرایش کارت</string>
+    <string name="hint_optional">اختیاری</string>
+    <string name="position">موقعیت</string>
+    <string name="box_level">سطح (باکس)</string>
+    <string name="starred">ستاره‌دار</string>
+
+    <!-- Study modes -->
+    <string name="study_title">حالت آموزشی</string>
+    <string name="mode_card">حالت کارت</string>
+    <string name="mode_memorize">حالت حفظ</string>
+    <string name="mode_cram">حالت کرام (لیتنر)</string>
+    <string name="mode_quick">بازبینی سریع</string>
+    <string name="mode_test">آزمون</string>
+    <string name="choose_mode">یک حالت آموزشی انتخاب کنید</string>
+    <string name="start_study">شروع آموزش</string>
+    <string name="resume_session">بازگشت به جلسه قبلی</string>
+
+    <!-- Card mode -->
+    <string name="flip">بر کارت</string>
+    <string name="show_back">نمایش پاسخ</string>
+    <string name="previous">قبلی</string>
+    <string name="next">بعدی</string>
+    <string name="card_of">کارت %d از %d</string>
+
+    <!-- Memorize mode -->
+    <string name="know_it">دانشmandsam</string>
+    <string name="dont_know">نمیدانم</string>
+    <string name="memorize_removed">کارت از جلسه حذف شد.</string>
+    <string name="memorize_complete">تمام کارت‌ها یاد گرفته شدند!</string>
+
+    <!-- Cram mode / Leitner -->
+    <string name="cram_title">حالت کرام — سیستم لیتنر</string>
+    <string name="cram_box">باکس</string>
+    <string name="cram_box_level">سطح %d</string>
+    <string name="cram_cards_in_box">%d کارت در باکس %d</string>
+    <string name="cram_all_mastered">تمام کارت‌ها به بالاترین سطح رسیدند!</string>
+    <string name="cram_correct">درست</string>
+    <string name="cram_wrong">غلط</string>
+    <string name="cram_show_hint">نمایش راهنما</string>
+    <string name="cram_reveal">نمایش پاسخ (Space)</string>
+    <string name="cram_answered_correct">پاسخ درست — کارت به باکس بالا منتقل شد</string>
+    <string name="cram_answered_wrong">پاسخ غلط — کارت به باکس ۱ بازگشت</string>
+    <string name="cram_progress">پیشرفت: %d/%d</string>
+    <string name="cram_mastery">آموختن: %d%%</string>
+    <string name="cram_shortcuts">فاصله: نمایش پاسخ  •  R: درست  •  W: غلط  •  H: راهنما</string>
+    <string name="cram_box_status">وضعیت باکس‌ها</string>
+    <string name="cram_remaining">بقیه: %d</string>
+    <string name="cram_current_box">باکس فعلی: %d</string>
+
+    <!-- Quick review -->
+    <string name="quick_review_title">بازبینی سریع</string>
+    <string name="quick_done">اتمام بازبینی</string>
+
+    <!-- Test mode -->
+    <string name="test_title">آزمون</string>
+    <string name="test_question">سوال %d از %d</string>
+    <string name="test_type_choice">انتخابی چندگانه</string>
+    <string name="test_type_typed">نوشته‌ای</string>
+    <string name="test_submit">ارسال پاسخ</string>
+    <string name="test_result">نتیجه آزمون</string>
+    <string name="test_score">امتیاز: %d/%d (%d%%)</string>
+
+    <!-- Import / Export -->
+    <string name="import_export_title">واردات و صادرات</string>
+    <string name="import_csv">واردات از CSV</string>
+    <string name="import_text">واردات از متن ساده</string>
+    <string name="export_csv">صادرات به CSV</string>
+    <string name="export_json">صادرات به JSON</string>
+    <string name="merge_decks">ادغام مجموعه‌ها</string>
+    <string name="choose_file">انتخاب فایل</string>
+    <string name="paste_text">متن را اینجا بچسبانید</string>
+    <string name="separator">جدا‌کننده (مثلاً ; یا tab)</string>
+    <string name="import_success">با موفقیت وارد شد: %d کارت</string>
+    <string name="import_error">خطا در واردات: %s</string>
+    <string name="export_success">صادر شد به: %s</string>
+    <string name="export_error">خطا در صادرات: %s</string>
+    <string name="csv_format">فرمت CSV: ستون‌ها Front,Back[,Hint]</string>
+    <string name="text_format">فرمت متن: هر خط یک کارت. با جداکننده: Front|Back|Hint</string>
+
+    <!-- Statistics -->
+    <string name="statistics_title">آمار وarium</string>
+    <string name="total_cards">کل کارت‌ها</string>
+    <string name="mastered_cards">کارت‌های осво‌شده</string>
+    <string name="last_studied">آخرین آموزش</string>
+    <string name="never_studied">هرگز آموزش نشده</string>
+    <string name="correct_answers">پاسخ‌های درست</string>
+    <string name="wrong_answers">پاسخ‌های غلط</string>
+    <string name="study_streak">سر streak (روز متوالی)</string>
+
+    <!-- Dialogs -->
+    <string name="ok">تایید</string>
+    <string name="cancel">لغو</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="done">تکمیل</string>
+    <string name="close">بستن</string>
+
+    <!-- Settings -->
+    <string name="settings_title">تنظیمات</string>
+    <string name="theme">موضوع نمایش</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تاریک</string>
+    <string name="theme_system">نظامی</string>
+    <string name="language">زبان</string>
+    <string name="language_persian">فارسی</string>
+    <string name="rtl_description">راست به چپ با پشتیبانی کامل فارسی</string>
+</resources>
